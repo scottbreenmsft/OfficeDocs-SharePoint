@@ -1,4 +1,4 @@
----
+[---
 ms.date: 03/05/2024
 title: "Deploy OneDrive apps using Intune"
 ms.reviewer: 
@@ -49,3 +49,4 @@ There are two options for deploying the OneDrive app on iOS:
 ## Deploy the OneDrive app to Android devices
 
 - For the steps to deploy apps to Android devices, see [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android). Use **<https://play.google.com/store/apps/details?id=com.microsoft.skydrive>** as the Appstore URL. For info about assigning apps to groups, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
+](https://github.com/scottbreenmsft/OfficeDocs-SharePoint/blob/live/OneDrive/deploy-intune.md)
