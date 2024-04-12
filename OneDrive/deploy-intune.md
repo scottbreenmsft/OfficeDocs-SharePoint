@@ -1,4 +1,4 @@
-[---
+---
 ms.date: 03/05/2024
 title: "Deploy OneDrive apps using Intune"
 ms.reviewer: 
@@ -36,7 +36,7 @@ If you're a global admin or assigned [a role in Intune](/mem/intune/fundamentals
 
 OneDrive is preinstalled on Windows 10 and later. You can choose to switch to [per-machine installation](per-machine-installation.md).
 
-For info about configuring sync app settings using Intune, see [Use administrative templates in Intune](configure-sync-intune.md).
+For info about configuring sync app settings using Intune, see [Configure settings with Intune](configure-sync-intune.md).
 
 ## Deploy the OneDrive app to iOS devices
 
