@@ -1,20 +1,22 @@
 ---
+ms.date: 03/05/2024
 title: "Deploy OneDrive apps using Intune"
 ms.reviewer: 
-ms.author: kaarins
-author: kaarins
-manager: serdars
+ms.author: mactra
+author: MachelleTranMSFT
+manager: jtremper
 audience: Admin
 f1.keywords:
 - NOCSH
 ms.topic: article
 ms.service: one-drive
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_OD_admin
 - M365-collaboration
 ms.custom:
 - seo-marvel-apr2020
+- onedrive-toc
 search.appverid:
 - MET150
 - ODB160
@@ -28,30 +30,22 @@ description: "In this article, you'll learn how you can use Intune to deploy the
 
 # Deploy OneDrive apps by using Intune
 
-If you're a global admin or assigned [a role in Intune](/mem/intune/fundamentals/role-based-access-control) that gives you the necessary permissions, you can use Intune to deploy OneDrive apps. Before you begin deploying, make sure you review the planning information and deployment options in the [OneDrive guide for enterprises](plan-onedrive-enterprise.md).
+If you're a global admin or assigned [a role in Intune](/mem/intune/fundamentals/role-based-access-control) that gives you the necessary permissions, you can use Intune to deploy OneDrive apps. Before you begin deploying, make sure you review the planning information and deployment options in the [Plan file sync for SharePoint and OneDrive in Microsoft 365](plan-file-sync.md).
 
-## Deploy the OneDrive app for iOS or Android
+## Deploy the OneDrive sync app to Windows devices
 
-To deploy apps in Intune, you use the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/?ref=AdminCenter#blade/Microsoft_Intune_DeviceSettings/AppsMenu/allApps). For the steps to deploy apps to iOS devices, see [Add iOS store apps to Microsoft Intune](/mem/intune/apps/store-apps-ios). For the steps to deploy apps to Android devices, see [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android). Use **https://play.google.com/store/apps/details?id=com.microsoft.skydrive** as the Appstore URL. For info about assigning apps to groups, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
-
-### Deploy the OneDrive sync app to Windows 10 devices 
-
-Although the sync app comes with Windows 10, you might use Intune to switch to [per-machine installation](per-machine-installation.md).
-
-1. Go to the [All apps page of the Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/?ref=AdminCenter#blade/Microsoft_Intune_DeviceSettings/AppsMenu/allApps)
-2. Select **Add**.
-3. In the **App type** list, under **Microsoft 365 Apps**, select **Windows 10**, and then select **Select**. 
-4. Review the app suite information, and then select **Next**.
-5. On the **Configure App Suite** tab, under **Select Office apps**, select **OneDrive**. Make any other changes to the configuration settings, and then select **Next**.
-
-    ![Configuring the app suite by selecting OneDrive](media/configure-app-suite.png)
-
-    > [!NOTE]
-    > The Update channel doesn't apply to the OneDrive sync app, so it doesn't matter what you select. [Learn about OneDrive sync app update rings](sync-client-update-process.md)
-
-6. On the **Assignments** tab, assign the app to groups. For info about this, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy). When you're done, select **Next**. 
-7. Review the app information, and then select **Create**.
-
-For more info about deploying Microsoft 365 apps to Windows 10 devices using Intune, see [Add Office 365 apps to Windows 10 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365). 
+OneDrive is preinstalled on Windows 10 and later. You can choose to switch to [per-machine installation](per-machine-installation.md).
 
 For info about configuring sync app settings using Intune, see [Use administrative templates in Intune](configure-sync-intune.md).
+
+## Deploy the OneDrive app to iOS devices
+
+To deploy apps in Intune, you use the [Microsoft Intune admin center](https://intune.microsoft.com/?ref=AdminCenter#blade/Microsoft_Intune_DeviceSettings/AppsMenu/allApps). 
+
+There are two options for deploying the OneDrive app on iOS:
+- **Apple VPP.** Using this option and deploying with device licensing, the app is installed without user interaction. For more information, see [How to manage iOS and macOS apps purchased through Apple Business Manager with Microsoft Intune](/mem/intune/apps/vpp-apps-ios).
+- **iOS Store app.** Using this option doesn't require any connection to Apple Business Manager, however users will be prompted to enter their Apple ID password to install the app. For more information, see [Add iOS store apps to Microsoft Intune](/mem/intune/apps/store-apps-ios).
+
+## Deploy the OneDrive app to Android devices
+
+- For the steps to deploy apps to Android devices, see [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android). Use **<https://play.google.com/store/apps/details?id=com.microsoft.skydrive>** as the Appstore URL. For info about assigning apps to groups, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
