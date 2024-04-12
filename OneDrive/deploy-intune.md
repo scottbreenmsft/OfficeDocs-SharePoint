@@ -48,7 +48,20 @@ There are two options for deploying the OneDrive app on iOS:
 
 ## Deploy the OneDrive app to Android devices
 
-- For the steps to deploy apps to Android devices, see [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android). Use **<https://play.google.com/store/apps/details?id=com.microsoft.skydrive>** as the Appstore URL.
+There are two options for deploying the OneDrive app on Android:
+- [Add Managed Google Play apps to Android Enterprise devices with Intune](/mem/intune/apps/apps-add-android-for-work)
+- [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android).
+  - Use **<https://play.google.com/store/apps/details?id=com.microsoft.skydrive>** as the Appstore URL.
+
+## Deploy the OneDrive app to macOS devices
+
+There are two options for deploying the OneDrive app using Intune:
+- **Microsoft 365 Apps.** You can deploy Microsoft 365 apps including OneDrive with Intune. For more information, see [Assign Microsoft 365 to macOS devices with Microsoft Intune](/mem/intune/apps/apps-add-office365-macos).
+- **Deploy a standalone PKG**
+    1. Downlaod the [app package (.pkg)](deploy-and-configure-on-macos.md)
+    1. Deploy using [Add an unmanaged macOS PKG app to Microsoft Intune](/mem/intune/apps/macos-unmanaged-pkg)
+  
+For more information about OneDrive on macOS, see [Deploy and Configure OneDrive on macOS](deploy-and-configure-on-macos.md).
 
 ## See also
 For information about assigning apps to groups, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
