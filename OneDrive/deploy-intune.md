@@ -25,7 +25,7 @@ search.appverid:
 - MBS150
 - ODB150
 ms.assetid: 3f3a511c-30c6-404a-98bf-76f95c519668
-description: "In this article, you'll learn how you can use Intune to deploy the OneDrive mobile app to iOS and Android devices and the OneDrive sync app to Windows 10."
+description: "In this article, you'll learn how you can use Intune to deploy the OneDrive mobile app to iOS and Android devices and the OneDrive sync app to Windows."
 ---
 
 # Deploy OneDrive apps by using Intune
@@ -48,5 +48,7 @@ There are two options for deploying the OneDrive app on iOS:
 
 ## Deploy the OneDrive app to Android devices
 
-- For the steps to deploy apps to Android devices, see [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android). Use **<https://play.google.com/store/apps/details?id=com.microsoft.skydrive>** as the Appstore URL. For info about assigning apps to groups, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
-](https://github.com/scottbreenmsft/OfficeDocs-SharePoint/blob/live/OneDrive/deploy-intune.md)
+- For the steps to deploy apps to Android devices, see [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android). Use **<https://play.google.com/store/apps/details?id=com.microsoft.skydrive>** as the Appstore URL.
+
+## See also
+For information about assigning apps to groups, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
